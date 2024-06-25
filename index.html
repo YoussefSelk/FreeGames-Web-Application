@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Games</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <link rel="stylesheet" href="/assets/css/App.css" />
+    <script src="/assets/js/home/scrollAnimations.js" defer></script>
+
+    <script src="/assets/js/home/App.js" type="module"></script>
+  </head>
+  <body class="bg-black text-white">
+    <header>
+      <nav class="p-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <a
+            href="#"
+            class="text-white text-lg font-bold transition duration-300 ease-in-out transform hover:scale-110"
+            >Free Games</a
+          >
+          <div class="space-x-4">
+            <a
+              href="#home"
+              class="text-gray-300 hover:text-white transition duration-300 ease-in-out transform hover:scale-110"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="text-gray-300 hover:text-white transition duration-300 ease-in-out transform hover:scale-110"
+              >About</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-300 hover:text-white transition duration-300 ease-in-out transform hover:scale-110"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section
+        id="home"
+        class="container mx-auto mt-8 flex flex-col md:flex-row items-center justify-between"
+      >
+        <div class="md:w-1/2 md:pr-8 text-center md:text-left">
+          <h1
+            class="text-6xl font-bold text-orange-300 mb-8"
+            data-aos="fade-up"
+          >
+            Get Free Games
+          </h1>
+          <p
+            class="mt-4 text-gray-300 text-lg max-w-lg"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            Discover the latest free games and enjoy them without any cost. Stay
+            tuned for new releases and updates.
+          </p>
+        </div>
+        <div class="md:w-1/2 text-center">
+          <img
+            src="/assets/img/glitch.png"
+            alt=""
+            class="w-full md:w-[600px] h-auto mx-auto md:mx-0"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          />
+        </div>
+      </section>
+
+      <section id="about" class="container mx-auto mt-16 mb-16">
+        <div class="">
+          <h1 class="text-6xl font-bold text-white mb-12" data-aos="fade-up">
+            Platforms
+          </h1>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <!-- Platform item 1 -->
+          <div
+            class="platform-item bg-gray-800 rounded-lg p-4 text-center"
+            data-aos="fade-up"
+          >
+            <i class="fab fa-windows text-5xl text-white mb-2"></i>
+            <button class="platform-button text-white" id="windows">
+              Windows
+            </button>
+          </div>
+
+          <!-- Platform item 2 -->
+          <div
+            class="platform-item bg-gray-800 rounded-lg p-4 text-center"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <i class="fab fa-playstation text-5xl text-white mb-2"></i>
+            <button class="platform-button text-white">PlayStation</button>
+            <span
+              class="mt-4 inline-block bg-gray-200 text-gray-800 text-sm font-bold uppercase px-1 py-1 rounded-full shadow-md"
+            >
+              Coming Soon
+            </span>
+          </div>
+
+          <!-- Platform item 3 -->
+          <div
+            class="platform-item bg-gray-800 rounded-lg p-4 text-center"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <i class="fab fa-xbox text-5xl text-white mb-2"></i>
+            <button class="platform-button text-white">Xbox</button>
+            <span
+              class="mt-4 inline-block bg-gray-200 text-gray-800 text-sm font-bold uppercase px-1 py-1 rounded-full shadow-md"
+            >
+              Coming Soon
+            </span>
+          </div>
+
+          <!-- Platform item 4 -->
+          <div
+            class="platform-item bg-gray-800 rounded-lg p-4 text-center"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <i class="fas fa-globe text-5xl text-white mb-2"></i>
+            <button class="platform-button text-white" id="web">
+              Web Browser
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="mt-16 mb-16">
+        <div class="container mx-auto">
+          <h1 class="text-6xl font-bold text-white mb-12" data-aos="fade-up">
+            About Us
+          </h1>
+        </div>
+        <div class="container mx-auto text-gray-100 text-lg">
+          <p class="mb-8" data-aos="fade-up" data-aos-delay="200">
+            We are a passionate team of developers who love games. Our mission
+            is to bring you the latest and most exciting games, keeping you
+            updated with new releases and updates.
+          </p>
+          <p data-aos="fade-up" data-aos-delay="400">
+            Join us on our journey to explore the world of gaming and discover
+            new adventures together.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="mt-16 mb-16">
+        <div class="container mx-auto">
+          <h1 class="text-6xl font-bold text-white mb-12" data-aos="fade-up">
+            Contact Us
+          </h1>
+        </div>
+        <div class="container mx-auto text-gray-100 text-lg">
+          <p class="mb-8" data-aos="fade-up" data-aos-delay="200">
+            If you have any questions, comments, or feedback, please contact us
+            at:
+          </p>
+          <p data-aos="fade-up" data-aos-delay="400">
+            <a
+              href="mailto:GyY0Z@example.com"
+              class="underline hover:text-orange-300"
+              >GyY0Z@example.com</a
+            >
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
