@@ -1,5 +1,11 @@
 import getGamesByPlatform from "../API/getGamesByPlatformAPI.js";
-import { getUrlParam, updateUrlParameter } from "../functions.js";
+import {
+  getUrlParam,
+  updateUrlParameter,
+  createGameElement,
+  displayGames,
+  responsiveMenu,
+} from "../functions.js";
 
 const pcCheckbox = document.getElementById("pc");
 const webCheckbox = document.getElementById("web");
@@ -19,40 +25,6 @@ async function fetchGames(platform, page) {
     console.error("Error fetching games:", error);
     throw error;
   }
-}
-
-// Function to display games in the UI
-function displayGames(games) {
-  gamesContainer.innerHTML = ""; // Clear previous content
-
-  games.forEach((game) => {
-    const gameElement = createGameElement(game);
-    gamesContainer.appendChild(gameElement);
-  });
-}
-
-// Function to create HTML element for a game
-function createGameElement(game) {
-  const gameElement = document.createElement("div");
-  gameElement.classList.add("game-item");
-  gameElement.innerHTML = `
-    <div class="relative h-40 overflow-hidden text-white shadow-lg bg-clip-border rounded-t-xl">
-      <img src="${game.thumbnail}" alt="card-image" class="w-full h-full object-cover" />
-    </div>
-    <div class="p-4">
-      <h5 class="block mb-2 font-sans text-lg antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-        ${game.title}
-      </h5>
-      <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
-        ${game.short_description}
-      </p>
-      <a class="inline-block text-center uppercase transition-all text-xs py-2 px-4 rounded-lg bg-gray-900 text-white shadow-md hover:shadow-lg"
-        href="${game.game_url}">
-        Read More
-      </a>
-    </div>
-  `;
-  return gameElement;
 }
 
 // Function to handle platform change
@@ -104,7 +76,7 @@ searchBtn.addEventListener("click", async () => {
   const query = searchInput.value;
   try {
     const searchResults = await searchGames(query);
-    displayGames(searchResults);
+    displayGames(searchResults, gamesContainer);
   } catch (error) {
     console.error("Error searching and displaying games:", error);
   }
@@ -128,11 +100,11 @@ if (platformParam === "pc") {
 async function fetchAndDisplayGames(platform, page) {
   try {
     const games = await fetchGames(platform, page);
-    displayGames(games);
+    displayGames(games, gamesContainer);
   } catch (error) {
     console.error("Error fetching or displaying games:", error);
   }
 }
-
+responsiveMenu();
 // Initial load of games
 fetchAndDisplayGames(platformParam || "pc", currentPage);
