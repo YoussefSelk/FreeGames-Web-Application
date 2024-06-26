@@ -40,8 +40,7 @@ The FreeGames Web Application is a platform designed to provide free games to us
 
 ## Usage
 
-- Browse games, search by name or category.
-- Play games directly on the website.
+- Browse games, search by name or category or platform.
 - Enjoy a modern and responsive user interface.
 
 ## Contributing
