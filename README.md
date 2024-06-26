@@ -19,8 +19,7 @@ The FreeGames Web Application is a platform designed to provide free games to us
 
 ## Features
 
-- **Game Browse and Search**: Browse a collection of free games and search by name or category.
-- **Game Play**: Play games directly on the website.
+- **Game Browse and Search**: Browse a collection of free games and search by name or category or platform.
 - **User Interface**: Modern and responsive interface using Tailwind CSS, AOS for animations, and Font Awesome icons.
 - **Frontend Interactivity**: Enhanced user experience with ES6 for modern JavaScript functionality and AJAX for asynchronous operations.
 
@@ -38,8 +37,12 @@ The FreeGames Web Application is a platform designed to provide free games to us
     git clone https://github.com/YoussefSelk/FreeGames-Web-Application.git
     cd FreeGames-Web-Application
     ```
+2. **Install dependencies:**
+    ```sh
+    npm install
+    ```
 
-2. **Open the application:**
+3. **Open the application:**
    - Navigate to the cloned directory and open `index.html` in your web browser.
 
 ## Usage
