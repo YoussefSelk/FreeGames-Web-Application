@@ -3,7 +3,9 @@
 ## Description
 The FreeGames Web Application is a platform designed to provide free games to users. It allows users to browse, search, and play games directly from their web browser.
 
-![App Screenshot](https://github.com/YoussefSelk/FreeGames-Web-Application/assets/113248214/09715550-3385-4325-baac-7b6783542ae1)
+<img src="https://github.com/YoussefSelk/FreeGames-Web-Application/assets/113248214/09715550-3385-4325-baac-7b6783542ae1" alt="App Screenshot 1" style="width: 400px; margin-right: 20px;">
+<img src="https://github.com/YoussefSelk/FreeGames-Web-Application/assets/113248214/e9a870d4-6dc7-4321-9e66-375389f79206" alt="App Screenshot 2" style="width: 400px;">
+<img src="https://github.com/YoussefSelk/FreeGames-Web-Application/assets/113248214/e9fd393c-d207-43a8-973b-1397e153cafe" alt="App Screenshot 2" style="width: 400px;">
 
 ## Table of Contents
 - [Features](#features)
