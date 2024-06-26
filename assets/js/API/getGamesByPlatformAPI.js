@@ -1,11 +1,11 @@
-// getGamesByPlatformAPI.js
+import RapidAPI from "./getApiKey.js";
 
 const BASE_URL =
   "https://free-to-play-games-database.p.rapidapi.com/api/games?platform=";
 const options = {
   method: "GET",
   headers: {
-    "x-rapidapi-key": "e6568a0fabmsh2ee24ee0a2eac68p10e156jsn54c1987779bf",
+    "x-rapidapi-key": RapidAPI,
     "x-rapidapi-host": "free-to-play-games-database.p.rapidapi.com",
   },
 };
