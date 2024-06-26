@@ -3,7 +3,7 @@
 ## Description
 The FreeGames Web Application is a platform designed to provide free games to users. It allows users to browse, search, and play games directly from their web browser.
 
-![App Screenshot](https://via.placeholder.com/800x400)
+![App Screenshot](https://imgur.com/gQkkTrz)
 
 ## Table of Contents
 - [Features](#features)
