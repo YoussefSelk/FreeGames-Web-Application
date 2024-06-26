@@ -30,6 +30,27 @@ The FreeGames Web Application is a platform designed to provide free games to us
 - **Animations**: AOS (Animate on Scroll)
 - **Icons**: Font Awesome
 
+## How To Get API via RapidApi
+
+1. **Sign Up or Log In to RapidAPI:**
+
+   - If you haven't already, [sign up for a RapidAPI account](https://rapidapi.com/signup/) or log in if you already have one.
+
+2. **Subscribe to the API:**
+
+   - On the API page, click on the "Subscribe" button to subscribe to the API.
+   - Select a pricing plan that suits your needs. Some APIs offer a free tier for testing purposes. [This Api is Free](https://rapidapi.com/digiwalls/api/free-to-play-games-database)
+
+3. **Get Your API Key:**
+
+   - After subscribing, navigate to the "Settings" or "Dashboard" section of your RapidAPI account.
+   - Find the API key associated with the Free-to-Play Games Database API.
+   - Copy your API key.
+
+4. **Use Your API Key:**
+
+   - Once you have your API key, you can use it in your FreeGames Web Application to make requests to the Free-to-Play Games Database .
+
 ## Installation
 
 1. **Clone the repository:**
